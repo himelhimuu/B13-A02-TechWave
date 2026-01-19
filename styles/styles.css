@@ -142,6 +142,7 @@ background: #1A0B2E;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #fff;
 }
 .about-text {
     font-size: 16px;
@@ -186,6 +187,7 @@ background: #1A0B2E;
     color: white;
     padding: 100px 200px 200px 200px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .section-title {
@@ -245,15 +247,15 @@ background: #1A0B2E;
 /* grid section end */
 /* Episodes Styles */
 .episodes-section {
-    padding: 80px 50px;
+    padding: 100px 200px;
     background-color: #1A0B2E;
     text-align: center;
 }
 
 .episodes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
     max-width: 1200px;
     margin: 40px auto 0;
     text-align: left;
@@ -273,7 +275,7 @@ background: #1A0B2E;
 .thumbnail-container {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 160px;
 }
 
 .thumbnail {
@@ -301,11 +303,11 @@ background: #1A0B2E;
     height: 100%;
 }
 .card-content {
-    padding: 25px;
+    padding: 20px;
 }
 
 .card-content h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: white;
 }
@@ -332,7 +334,7 @@ background: #1A0B2E;
 
 /* --- Meet The Host Styles --- */
 .host-section {
-    padding: 80px 50px;
+    padding: 30px 200px;
     background-color: #1A0B2E;
     text-align: center;
 }
@@ -378,8 +380,8 @@ background: #1A0B2E;
 }
 
 .social-icon {
-    width: 32px;
-    height: 32px;
+    width: 15px;
+    height: 15px;
     opacity: 0.8;
     transition: 0.3s;
 }
@@ -388,6 +390,8 @@ background: #1A0B2E;
     opacity: 1;
     transform: scale(1.1);
 }
+/* footer */
+
 
 /* Responsive */
 @media (max-width: 576px) {
