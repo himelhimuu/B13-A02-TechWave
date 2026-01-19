@@ -107,7 +107,7 @@ background: #1A0B2E;
     gap: 20px;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .hero-text{
     text-align: center;
@@ -127,3 +127,55 @@ background: #1A0B2E;
     margin-top: 10px;
 }
 /* end off hero and nav */
+
+/* about section */
+.about-section {
+    background-color: #1A0B2E;
+    color: white;
+    text-align: center;
+    padding-top: 70px;         
+    padding-bottom: 80px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about-text {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+}
+
+/* stat items*/
+.stat-item h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #00FF94;
+    margin-bottom: 5px;
+}
+
+.stat-item h3 i {
+    font-size: 28px;
+    color: #00FF94;
+}
+
+.stat-item p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #cccccc;
+}
