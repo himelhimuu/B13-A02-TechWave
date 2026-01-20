@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 1600px;
 }
 body{
   font-family: "Inter", sans-serif;
@@ -483,4 +484,35 @@ background: #1A0B2E;
     .episodes-grid {
         grid-template-columns: 1fr;
     }
+    #hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24;
+    }
+    .hero-container {
+    position: relative;
+    margin: 30px auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .mic-icon {
+        width: 95px;
+    }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40;
+        padding: 40px 20px 40px 20px;
+    }
+    .stats-container{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
 }
