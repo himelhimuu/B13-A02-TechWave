@@ -9,8 +9,11 @@ body{
   font-weight: 600;
   font-style: normal; */
 }
-.logo{
-    color: #FFFF;
+.logo {
+    flex: 1; 
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
 }
 .logo span{
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
@@ -20,38 +23,71 @@ body{
 }
 .btn{
 /* Primary Button_2 */
-border: none;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 4;
-padding: 12px 16px 12px 16px;
-border-radius: 1000px;
-background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
-color: #FFFF;
-font-size: 16px;
-font-weight: 550;
-}
-header{
-    box-sizing: border-box;
-border-bottom: 1px solid rgba(65, 37, 103, 1);
-background: #1A0B2E;
-}
-.navber{
+    border: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin: 0 200px 0;
-    padding: 16px 0px 16px 0px;
+    gap: 4px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 1000px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+    color: #FFFF;
+    font-size: 16px;
+    font-weight: 550;
 }
-.nav-links{
+.btn-trans{
+    background: transparent;
+    border: 1px solid #00FF94;
+    color: #00FF94;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 550;
+    cursor: pointer;
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    background-color: #1A0B2E;
+    border-bottom: 1px solid rgba(65, 37, 103, 1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px; 
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-links {
+    display: flex;
+    gap: 40px;
     list-style: none;
     font-size: 16px;
-    font-weight: 450;
-    color: #FFFF;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-links li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li:hover {
+    color: #ff00cc;
+}
+.btn-container {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
 }
 #hero{
     background: url(../assets/hero-bg.png);
@@ -554,5 +590,10 @@ background: #1A0B2E;
         justify-content: center;
         gap: 20px;
         padding-top: 30px;
+    }
+    .footer-section{
+        /* background-size: contain; */
+        background-size: auto 100%;
+        background-position: center;
     }
 }
