@@ -391,7 +391,87 @@ background: #1A0B2E;
     transform: scale(1.1);
 }
 /* footer */
+/* ফুটার সেকশন */
+.footer-section {
+    background-color: #1A0B2E; /* মেইন ব্যাকগ্রাউন্ড কালার */
+    position: relative;
+    padding: 120px 0; /* উপরে ও নিচে ১২০px গ্যাপ */
+    text-align: center;
+    overflow: hidden; /* ব্যাকগ্রাউন্ডের ছবি বাইরে গেলে কেটে ফেলবে */
+}
 
+/* ফুটার ব্যাকগ্রাউন্ড ওয়েভ (যদি থাকে) */
+.footer-bg-wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0.1; /* খুব হালকা করে দেখানোর জন্য */
+    pointer-events: none; /* যাতে মাউস ক্লিকে সমস্যা না করে */
+}
+.footer-section{
+    background-image: url(/assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    margin: 0 auto;
+}
+.footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.footer-logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-logo span {
+    background: linear-gradient(90deg, #ff00cc, #ff9900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.link-item img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); 
+}
+
+.link-item:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+.copyright-text {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 20px;
+}
 
 /* Responsive */
 @media (max-width: 576px) {
