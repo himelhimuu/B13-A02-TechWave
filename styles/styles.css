@@ -511,8 +511,48 @@ background: #1A0B2E;
     }
     .stats-container{
         display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 30px;
+        border-top: none;
     }
+    .stat-item {
+        /* flex-basis: calc(50% - 20px); */
+        width: 45%;
 
+        margin-bottom: 10px;
+    }
+    .stat-item h3 {
+        font-size: 28px;
+    }
+    .episodes-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 60;
+        padding: 40px 20px 40px 20px;
+    }
+    .host-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 60;
+        padding: 40px 20px 40px 20px;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .social-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 30px;
+    }
 }
